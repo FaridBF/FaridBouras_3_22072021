@@ -179,6 +179,18 @@ h3 {
   object-fit: cover;
 }
 
+.texte_restaurant {
+  font-size: 1rem;
+  color: black;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.texte_restaurant p {
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
 h4 {
   font-weight: bold;
   font-size: 1rem;
@@ -212,8 +224,14 @@ h4 {
   min-height: 30px;
   min-width: 10%;
   width: 25%;
-  font-size: 1rem;
+  font-size: 1.6rem;
   justify-content: center;
+  cursor: pointer;
+}
+
+.coeur:hover {
+  transform: scale(1.04);
+  color: black;
 }
 
 footer {
@@ -232,7 +250,7 @@ h5 {
 footer a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .container {
