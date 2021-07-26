@@ -72,11 +72,12 @@ main {
 .bouton_rechercher {
   background-color: #ff79da;
   color: white;
-  font-size: 1.3rem;
-  height: 3rem;
+  font-size: 1.1rem;
+  height: 70px;
   font-weight: bold;
-  border-radius: 2rem;
+  border-radius: 3rem;
   margin-top: 1rem;
+  width: 69%;
 }
 
 h2 {
@@ -103,12 +104,25 @@ h2 {
   box-shadow: 0 0 1rem #0000002e;
 }
 
+.section_filtre:hover {
+  background-color: #e4b1e1;
+  transform: scale(1.04);
+}
+
 .icone_choissisez,
 .icone_composez,
 .icone_degustez {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   font-size: 1.5rem;
+  color: rgb(129, 127, 127);
+}
+
+.icone_choissisez:hover,
+.icone_composez:hover,
+.icone_degustez:hover {
+  color: #140f14;
+  transform: scale(1.04);
 }
 
 .numérotation {
@@ -165,13 +179,33 @@ h3 {
   object-fit: cover;
 }
 
-.coeur {
+h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nouveau {
   position: absolute;
   background-color: #93efd7;
   color: #1fbf50;
   right: 1.8rem;
   font-weight: bold;
   margin-top: 0.7rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  min-width: 10%;
+  width: 25%;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.coeur {
+  position: absolute;
+  color: #921fbf;
+  right: 1.8rem;
+  font-weight: bold;
   height: 30px;
   display: flex;
   align-items: center;
