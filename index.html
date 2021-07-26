@@ -13,20 +13,22 @@
     <!-- Header -->
 
     <header>
-        <div id="Logo">
+        <div class="logo">
             <img src="images/ohmyfood.png" alt="ohmyfood">
-        </div>
-        <div>
-            <p><i class="fas fa-map-marker-alt icone_localisation"></i>Paris,Belleville</p>
         </div>
     </header>
 
     <!-- Section 1 -->
     <main>
         <section>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
-            <button class="bouton_rechercher" type="button">Explorer nos restaurants</button>
+            <div class="localisation">
+                <p><i class="fas fa-map-marker-alt icone_localisation"></i>Paris, Belleville</p>
+            </div>
+            <div class="accueil">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+                <button class="bouton_rechercher" type="button">Explorer nos restaurants</button>
+            </div>
         </section>
 
         <!-- Section 2 -->
@@ -34,24 +36,25 @@
             <h2>Fonctionnement</h2>
             <div class="navigation">
                 <div class="section_filtre">
-                    <span>1</span>
-                    <div class="icone_choissisez"><i class="" aria-hidden="true"></i>
+                    <span class="numérotation">1</span>
+                    <div class="icone_choissisez"><i class="fas fa-mobile-alt" aria-hidden="true"></i>
                     </div>
                     <div>
                         <p>Choissisez un restaurant</p>
                     </div>
                 </div>
                 <div class="section_filtre">
-                    <span>2</span>
-                    <div class="icone_composez"><i class="" aria-hidden="true"></i>
+                    <span class="numérotation">2</span>
+                    <div class="icone_composez"><i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                        <i class="fas fa-bars" aria-hidden="true"></i>
                     </div>
                     <div>
                         <p>Composez votre menu</p>
                     </div>
                 </div>
                 <div class="section_filtre">
-                    <span>3</span>
-                    <div class="icone_degustez"><i class="" aria-hidden="true"></i>
+                    <span class="numérotation">3</span>
+                    <div class="icone_degustez"><i class="fas fa-store" aria-hidden="true"></i>
                     </div>
                     <div>
                         <p>Dégustez au restaurant</p>
@@ -67,20 +70,22 @@
                 <div class="restaurant">
                     <a href="#">
                         <div class="image_restaurant">
-                            <!-- <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"> -->
+                            <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                             <span>Nouveau</span>
                         </div>
                         <div class="texte_restaurant">
                             <h4>La palette du goût</h4>
                             <p>Ménilmontant</p>
-                            <span>coeur</span>
+                            <span><i class="far fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                            </span>
                         </div>
                     </a>
                 </div>
                 <div class="restaurant">
                     <a href="#">
                         <div class="image_restaurant">
-                            <!-- <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"> -->
+                            <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                             <span>Nouveau</span>
                         </div>
                         <div class="texte_restaurant">
@@ -93,7 +98,7 @@
                 <div class="restaurant">
                     <a href="#">
                         <div class="image_restaurant">
-                            <!-- <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"> -->
+                            <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                         </div>
                         <div class="texte_restaurant">
                             <h4>À la française</h4>
@@ -105,7 +110,8 @@
                 <div class="restaurant">
                     <a href="#">
                         <div class="image_restaurant">
-                            <!-- <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Le délice des sens"> -->
+                            <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Le délice des sens">
                         </div>
                         <div class="texte_restaurant">
                             <h4>Le délice des sens</h4>
@@ -124,8 +130,10 @@
             <div class="container">
                 <h5>ohmyfood</h5>
                 <ul>
-                    <li><a href="#"><i class="" aria-hidden="true"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="" aria-hidden="true"></i>Devenir partenaire</a></li>
+                    <li class="icone_restaurant"><a href="#"><i class="fas fa-utensils" aria-hidden="true"></i>Proposer
+                            un restaurant</a></li>
+                    <li class="icone_partenaire"><a href="#"><i class="fas fa-hands-helping"
+                                aria-hidden="true"></i>Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="ohmyfood@gmail.com">Contact</a></li>
                 </ul>
