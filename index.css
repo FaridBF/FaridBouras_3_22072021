@@ -63,6 +63,13 @@ p {
 h1 {
   width: 81%;
   font-size: 2rem;
+  text-align: center;
+}
+
+.accueil p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: -0.5rem;
 }
 
 main {
@@ -72,18 +79,24 @@ main {
 .bouton_rechercher {
   background-color: #ff79da;
   color: white;
+  border-color: transparent;
   font-size: 1.1rem;
-  height: 70px;
+  height: 65px;
   font-weight: bold;
   border-radius: 3rem;
   margin-top: 1rem;
   width: 69%;
+  box-shadow: 0 0 16px #0000002e;
 }
 
 h2 {
   margin-left: 1.56rem;
   margin-top: 2rem;
   font-size: 2rem;
+}
+
+.config {
+  display: flex;
 }
 
 .navigation {
@@ -152,12 +165,15 @@ h3 {
   background-color: rgb(248, 247, 247);
 }
 
+a {
+  text-decoration: none;
+}
+
 .les_restaurants {
   background-color: rgb(248, 247, 247);
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
 }
 
 .restaurant {
@@ -173,7 +189,7 @@ h3 {
 }
 
 .image_restaurant img {
-  height: 180px;
+  height: 175px;
   width: 21rem;
   overflow: hidden;
   object-fit: cover;
@@ -187,19 +203,19 @@ h3 {
 }
 
 .texte_restaurant p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: -1rem;
 }
 
 h4 {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .nouveau {
   position: absolute;
   background-color: #93efd7;
-  color: #1fbf50;
+  color: #31884c;
   right: 1.8rem;
   font-weight: bold;
   margin-top: 0.7rem;
@@ -211,13 +227,14 @@ h4 {
   width: 25%;
   font-size: 1rem;
   justify-content: center;
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 .coeur {
   position: absolute;
-  color: #921fbf;
-  right: 1.8rem;
-  font-weight: bold;
+  color: #6b6868;
+  right: 0.5rem;
   height: 30px;
   display: flex;
   align-items: center;
@@ -244,7 +261,7 @@ h5 {
   font-style: italic;
   margin-left: 2rem;
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 footer a {
