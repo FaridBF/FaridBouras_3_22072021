@@ -67,7 +67,7 @@ h1 {
 }
 
 .accueil p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: -0.5rem;
 }
@@ -77,11 +77,11 @@ main {
 }
 
 .bouton_rechercher {
-  background-color: #ff79da;
+  background-color: #de2dcc;
   color: white;
   border-color: transparent;
   font-size: 1.1rem;
-  height: 65px;
+  height: 60px;
   font-weight: bold;
   border-radius: 3rem;
   margin-top: 1rem;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .section_filtre:hover {
-  background-color: #e4b1e1;
+  background-color: #f8ecfb;
   transform: scale(1.04);
 }
 
@@ -127,19 +127,19 @@ h2 {
 .icone_degustez {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgb(129, 127, 127);
 }
 
 .icone_choissisez:hover,
 .icone_composez:hover,
 .icone_degustez:hover {
-  color: #140f14;
+  color: #b646ce;
   transform: scale(1.04);
 }
 
 .numérotation {
-  background-color: #ff79da;
+  background-color: #b646ce;
   color: white;
   border-radius: 100%;
   height: 30px;
@@ -148,7 +148,7 @@ h2 {
   justify-content: center;
   min-height: 30px;
   min-width: 10%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: -1rem;
 }
 
