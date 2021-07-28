@@ -44,6 +44,9 @@ img {
   width: 100%;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
+  height: 1365px;
+  position: relative;
+  padding-top: 0.5rem;
 }
 
 h1 {
@@ -53,19 +56,23 @@ h1 {
   justify-content: space-between;
   margin-left: 1.5rem;
   font-style: italic;
+  font-family: "Shrikhand";
 }
 
 h2 {
-  color: #a0a0a0;
-  font-size: 1.2rem;
-  margin-left: 1.3rem;
+  color: #686767;
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
   border-bottom: solid 3px #8af1ce;
   padding-bottom: 0.4rem;
   width: 12%;
+  font-family: "Roboto";
 }
 
-h3 {
-  font-size: 1rem;
+.nom_produit {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Roboto";
 }
 
 a {
@@ -82,42 +89,32 @@ a {
   display: flex;
   box-shadow: 0 0 1rem #0000002e;
   border-color: white;
-  border-radius: 0.75rem;
-  margin: 0px 0px 1.5rem 0;
+  border-radius: 1.5rem;
+  margin: 0px 0px 1.5rem 0rem;
+  padding-left: 0.8rem;
   width: 90%;
-  height: 75px;
+  height: 80px;
   overflow: hidden;
+  background: white;
 }
 
 .texte {
-  font-size: 1rem;
-  color: black;
   background-color: white;
+  width: 95%;
 }
 
-.texte p {
-  font-size: 1.2rem;
-  margin-top: -1rem;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 1.2rem;
+.description_produit {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -0.6rem;
 }
 
 .prix {
-  position: absolute;
-  color: #6b6868;
-  right: 0.5rem;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  min-height: 30px;
-  min-width: 10%;
-  width: 25%;
-  font-size: 1.6rem;
-  justify-content: center;
-  cursor: pointer;
+  color: #0f0f0f;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .bouton {
@@ -147,19 +144,21 @@ footer {
   background-color: #4e4b4b;
   color: white;
   margin-top: -3rem;
+  height: auto;
 }
 
-h5 {
-  font-style: italic;
+h3 {
   margin-left: 2rem;
-  padding-top: 1rem;
-  font-size: 1rem;
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  font-family: "Shrikhand";
 }
 
 footer a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
+  font-family: "Roboto";
 }
 
 .container {
@@ -169,10 +168,6 @@ footer a {
 .container ul li {
   color: white;
   list-style: none;
-}
-
-ul {
-  margin-top: -2rem;
 }
 
 .icone_restaurant {
