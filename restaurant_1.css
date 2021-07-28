@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* <!-- Header --> */
+
+.fleche {
+  display: flex;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+header img {
+  width: 50%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* <!-- Section 1 --> */
+
+main {
+  padding: auto;
+}
+
+.image_restaurant {
+  width: 100%;
+  height: 190px;
+}
+
+img {
+  width: 100%;
+}
+
+/* <!-- Section 2 --> */
+
+.section_restaurants {
+  background-color: rgb(248, 247, 247);
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+h1 {
+  width: 81%;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  font-style: italic;
+}
+
+h2 {
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  margin-left: 1.3rem;
+  border-bottom: solid 3px #8af1ce;
+  padding-bottom: 0.4rem;
+  width: 12%;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entree {
+  display: flex;
+  box-shadow: 0 0 1rem #0000002e;
+  border-color: white;
+  border-radius: 0.75rem;
+  margin: 0px 0px 1.5rem 0;
+  width: 90%;
+  height: 75px;
+  overflow: hidden;
+}
+
+.texte {
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+}
+
+.texte p {
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.prix {
+  position: absolute;
+  color: #6b6868;
+  right: 0.5rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  min-width: 10%;
+  width: 25%;
+  font-size: 1.6rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_commander {
+  background-color: #ff79da;
+  color: white;
+  border-color: transparent;
+  font-size: 1.1rem;
+  height: 60px;
+  font-weight: bold;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  width: 60%;
+  box-shadow: 0 0 16px #0000002e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- Footer --> */
+
+footer {
+  background-color: #4e4b4b;
+  color: white;
+  margin-top: -3rem;
+}
+
+h5 {
+  font-style: italic;
+  margin-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container {
+  padding-bottom: 1rem;
+}
+
+.container ul li {
+  color: white;
+  list-style: none;
+}
+
+ul {
+  margin-top: -2rem;
+}
+
+.icone_restaurant {
+  margin-right: 1.4rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.icone_partenaire {
+  margin-right: 1.2rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  /*Ici, le CSS s'appliquera aux écrans de 600 px minimum*/
+}
