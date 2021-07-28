@@ -9,6 +9,8 @@ body {
   display: flex;
   font-size: 1.5rem;
   align-self: center;
+  position: absolute;
+  left: 1.5rem;
 }
 
 header img {
