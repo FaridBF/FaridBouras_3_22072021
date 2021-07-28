@@ -115,23 +115,7 @@ h2 {
   transform: scale(1.04);
 }
 
-.icone_choissisez,
-.icone_composez,
-.icone_degustez {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  font-size: 1.2rem;
-  color: rgb(129, 127, 127);
-}
-
-.icone_choissisez:hover,
-.icone_composez:hover,
-.icone_degustez:hover {
-  color: #9356dc;
-  transform: scale(1.04);
-}
-
-.numérotation {
+.numerotation {
   background-color: #cb39d1;
   color: white;
   border-radius: 100%;
@@ -143,6 +127,22 @@ h2 {
   min-width: 8%;
   font-size: 1rem;
   margin-left: -1rem;
+}
+
+.icone_choissisez,
+.icone_composez,
+.icone_degustez {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  color: rgb(129, 127, 127);
+}
+
+.section_filtre:hover .icone_choissisez,
+.section_filtre:hover .icone_composez,
+.section_filtre:hover .icone_degustez {
+  color: #9356dc;
+  transform: scale(1.04);
 }
 
 .section_restaurants {
