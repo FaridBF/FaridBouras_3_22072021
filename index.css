@@ -114,21 +114,27 @@ h2 {
 
 .section_filtre:hover {
   background-color: #f8ecfb;
-  transform: scale(1.04);
 }
 
 .numerotation {
   background-color: #cb39d1;
   color: white;
   border-radius: 100%;
-  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 28px;
-  min-width: 9%;
-  font-size: 1rem;
+  min-width: 28px;
   margin-left: -1rem;
+}
+
+.icone_choissisez {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.icone_degustez {
+  padding-left: 6px;
 }
 
 .icone_choissisez,
@@ -144,7 +150,6 @@ h2 {
 .section_filtre:hover .icone_composez,
 .section_filtre:hover .icone_degustez {
   color: #9356dc;
-  transform: scale(1.04);
 }
 
 .section_restaurants {
@@ -178,7 +183,7 @@ a {
   background-color: white;
   border-radius: 0.75rem;
   margin: 0px 0px 1.5rem 0;
-  width: 90%;
+  width: auto;
   height: 250px;
   overflow: hidden;
 }
@@ -192,18 +197,16 @@ a {
 
 .nouveau {
   position: absolute;
-  background-color: #99e2d0;
-  color: #31884c;
-  right: 1.8rem;
+  margin-left: 270px;
+  background-color: #8aead2;
+  color: #1fa68d;
   font-weight: bold;
   margin-top: 0.7rem;
-  height: 30px;
+  height: 35px;
   display: flex;
   align-items: center;
-  min-height: 30px;
-  min-width: 10%;
-  width: 25%;
-  font-size: 1rem;
+  width: 100px;
+  font-size: 1.1rem;
   justify-content: center;
   border-radius: 0.2rem;
   cursor: pointer;
@@ -217,17 +220,13 @@ a {
 }
 
 .coeur {
-  position: absolute;
+  float: right;
   color: #6b6868;
-  right: 0.5rem;
+  margin-right: 26px;
   height: 30px;
   display: flex;
   align-items: flex-end;
-  min-height: 30px;
-  min-width: 10%;
-  width: 25%;
   font-size: 1.6rem;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -253,18 +252,15 @@ footer {
 }
 
 h4 {
-  font-style: italic;
   margin-left: 2rem;
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 22px;
   font-family: "Shrikhand";
 }
 
 footer a {
-  text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  font-family: "Roboto";
 }
 
 .container {
@@ -272,7 +268,6 @@ footer a {
 }
 
 .container ul li {
-  color: white;
   list-style: none;
 }
 
