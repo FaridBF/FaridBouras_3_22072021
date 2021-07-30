@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.87rem;
+  min-width: 350px;
 }
 
 .reservez {
@@ -190,14 +191,14 @@ a {
 
 .image_restaurant img {
   height: 175px;
-  width: 24rem;
+  width: 300px;
   overflow: hidden;
   object-fit: cover;
 }
 
 .nouveau {
   position: absolute;
-  margin-left: 270px;
+  margin-left: 185px;
   background-color: #8aead2;
   color: #1fa68d;
   font-weight: bold;
@@ -219,19 +220,30 @@ a {
   margin-left: 1rem;
 }
 
-.coeur {
+.coeur_1 {
   float: right;
   color: #6b6868;
   margin-right: 26px;
-  height: 30px;
+  height: 32px;
   display: flex;
   align-items: flex-end;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
-.coeur :hover {
-  color: #9356dc;
+.coeur_2 {
+  float: right;
+  color: transparent;
+  margin-right: -26px;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.coeur_2 :hover {
+  color: #c13cfffa;
 }
 
 .lieu_restaurant {
