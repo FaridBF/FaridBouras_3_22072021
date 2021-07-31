@@ -120,6 +120,32 @@ a {
   font-weight: bold;
 }
 
+.entree:hover .pour_validation {
+  background-color: rgb(86, 255, 199);
+  width: 8%;
+  font-size: 30px;
+  transform: rotate(0deg);
+}
+
+.entree:hover .icone_check {
+  transform: rotate(0deg);
+}
+
+.pour_validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 600ms, 800ms cubic-bezier(0.39, 0.58, 0.57, 1);
+  transform: translate(100px, 0px);
+  margin-left: 20px;
+}
+
+.icone_check {
+  transition: transform 600ms ease-in-out;
+  transform: rotate(-1turn);
+}
+
 .bouton {
   display: flex;
   justify-content: center;
