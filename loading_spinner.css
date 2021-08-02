@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif";
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+
+.animation_attente {
+  background-color: rgb(78, 78, 78);
+  line-height: 500px;
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader_spinner {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #c13cfffa;
+  border-bottom-color: #c13cfffa;
+  animation: spin 1s linear infinite;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.loader_spinner:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #06c3a1;
+  border-bottom-color: #06c3a1;
+  opacity: 0.6;
+  animation: spinreverse 2s linear infinite;
+}
+
+.loader_spinner::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  opacity: 0.6;
+  animation: spinreverse 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
