@@ -81,6 +81,11 @@ main {
   margin-top: 1rem;
   width: 70%;
   box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+}
+
+.bouton_rechercher:hover {
+  background-color: #fd59fbc2;
 }
 
 h2 {
@@ -296,6 +301,31 @@ footer a {
   color: white;
 }
 
-@media screen and (min-width: 600px) {
-  /*Ici, le CSS s'appliquera aux écrans de 600 px minimum*/
+@media screen and (min-width: 1000px) {
+  /*Ici, le CSS s'appliquera aux écrans de 1000 px minimum*/
+
+  .bouton_rechercher {
+    width: 20%;
+  }
+
+  .section_fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .navigation {
+    width: 25%;
+  }
+
+  .section_restaurants {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .les_restaurants {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
