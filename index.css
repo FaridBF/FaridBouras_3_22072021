@@ -179,7 +179,7 @@ header img {
   font-weight: bold;
   border-radius: 48px;
   margin-top: 16px;
-  width: 70%;
+  width: 250px;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   border: none;
@@ -305,8 +305,8 @@ a {
 .nouveau {
   position: absolute;
   margin-left: 185px;
-  background-color: #8aead2;
-  color: #1fa68d;
+  background-color: #99e2d0;
+  color: #008766;
   font-weight: bold;
   margin-top: 11px;
   height: 35px;
@@ -349,7 +349,9 @@ a {
 }
 
 .coeur_2 :hover {
-  color: #c13cfffa;
+  color: #9356dc;
+  transform: scale(1);
+  transition: all 0.7s ease-in-out;
 }
 
 .lieu_restaurant {
@@ -420,7 +422,7 @@ footer a {
   /* <!-- Section 1 --> */
 
   .bouton_rechercher {
-    width: 20%;
+    width: 265px;
   }
 
   /* <!-- Section 2 --> */
@@ -434,6 +436,7 @@ footer a {
 
   .navigation {
     width: 75%;
+    height: 200px;
     display: flex;
     flex-direction: row;
   }
@@ -457,8 +460,8 @@ footer a {
   }
 
   .image_restaurant img {
-    height: 250px;
-    width: 550px;
+    height: 300px;
+    width: 700px;
     overflow: hidden;
     object-fit: cover;
   }
