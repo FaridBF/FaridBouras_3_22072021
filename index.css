@@ -259,6 +259,8 @@ h2 {
   color: #9356dc;
 }
 
+/* <!-- Section 3 --> */
+
 .section_restaurants {
   background-color: rgb(248, 247, 247);
   height: auto;
@@ -354,19 +356,21 @@ a {
   transition: all 0.7s ease-in-out;
 }
 
-.lieu_restaurant {
-  font-size: 18px;
-  margin-top: -11px;
-}
-
 .nom_restaurant {
   font-weight: bold;
   font-size: 19px;
   margin-top: 24px;
 }
 
+.lieu_restaurant {
+  font-size: 18px;
+  margin-top: -11px;
+}
+
+/* <!-- Footer --> */
+
 footer {
-  background-color: #4e4b4b;
+  background-color: #353535;
   color: white;
   margin-top: -48px;
 }
@@ -381,7 +385,7 @@ h4 {
 
 footer a {
   color: white;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .container {
@@ -435,10 +439,15 @@ footer a {
   }
 
   .navigation {
-    width: 75%;
+    width: 80%;
     height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section_filtre {
+    width: 25%;
   }
 
   /* <!-- Section 3 --> */
@@ -464,6 +473,10 @@ footer a {
     width: 700px;
     overflow: hidden;
     object-fit: cover;
+  }
+
+  .nouveau {
+    margin-left: 584px;
   }
 
   /* <!-- Footer --> */

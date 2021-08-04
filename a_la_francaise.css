@@ -66,6 +66,34 @@ h1 {
   font-family: "Shrikhand";
 }
 
+.coeur_1 {
+  float: right;
+  color: #6b6868;
+  margin-right: 26px;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.coeur_2 {
+  float: right;
+  color: transparent;
+  margin-right: -26px;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.coeur_2 :hover {
+  color: #9356dc;
+  transform: scale(1);
+  transition: all 0.7s ease-in-out;
+}
+
 h2 {
   color: #686767;
   font-size: 1.1rem;
@@ -216,7 +244,7 @@ a {
 /* <!-- Footer --> */
 
 footer {
-  background-color: #4e4b4b;
+  background-color: #353535;
   color: white;
   margin-top: -3rem;
   height: auto;
@@ -233,7 +261,7 @@ h3 {
 footer a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 17px;
   font-family: "Roboto";
 }
 
@@ -284,6 +312,11 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+  }
+
+  .dispo_coeur {
+    margin-left: 25px;
   }
 
   .section_2 {
@@ -337,7 +370,8 @@ footer a {
   }
 
   .bouton {
-    width: 35%;
+    width: 25%;
+    margin-bottom: 30px;
   }
 
   footer {
