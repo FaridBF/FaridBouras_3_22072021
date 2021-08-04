@@ -28,6 +28,7 @@ body {
   animation: spin 1s linear infinite;
   margin-right: 20px;
   margin-left: 20px;
+  animation-delay: 500ms;
 }
 
 .loader_spinner:after {

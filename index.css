@@ -2,40 +2,130 @@ html {
   overflow: auto;
 }
 
+main {
+  padding: auto;
+}
+
 body {
   font-family: "Roboto";
   margin: 0;
   padding: 0;
-  font-size: 0.87rem;
+  font-size: 30px;
   min-width: 350px;
 }
 
-.reservez {
-  width: 81%;
-  font-weight: bold;
-  font-size: 1.9rem;
-  text-align: center;
+/* <!-- Loader spinner --> */
+
+.animation {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+  animation: fade 3s forwards;
 }
 
-.decouvrez {
-  font-size: 1.2rem;
-  color: grey;
-  margin-top: -1.5rem;
-  display: flex;
-  text-align: center;
+.loader {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader_spinner {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #c13cfffa;
+  border-bottom-color: #c13cfffa;
+  animation: spin 1s linear infinite;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.loader_spinner:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #06c3a1;
+  border-bottom-color: #06c3a1;
+  opacity: 0.6;
+  animation: spinreverse 2s linear infinite;
+}
+
+.loader_spinner::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  opacity: 0.6;
+  animation: spinreverse 2.5s linear infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  70% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 /* <!-- Header --> */
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
 
 header img {
   width: 50%;
   padding-top: 3%;
   padding-bottom: 3%;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
 }
 
 /* <!-- Section 1 --> */
@@ -45,15 +135,15 @@ header img {
   justify-content: center;
   background-color: rgb(230, 230, 230);
   font-weight: bold;
-  border-top: solid 0.31rem;
+  border-top: solid 5px;
   border-color: #dfdfdf;
-  box-shadow: 0 0 1rem #6e6e6e2e;
-  font-size: 1.3rem;
+  box-shadow: 0 0 16px #6e6e6e2e;
+  font-size: 21px;
 }
 
 .icone_localisation {
-  margin-right: 1rem;
-  font-size: 1.3rem;
+  margin-right: 16px;
+  font-size: 21px;
 }
 
 .accueil {
@@ -64,42 +154,47 @@ header img {
   height: 320px;
 }
 
-.découvrez {
-  font-size: 1.2rem;
+.reservez {
+  width: 81%;
+  font-weight: bold;
+  font-size: 30px;
   text-align: center;
-  margin-top: -0.5rem;
 }
 
-main {
-  padding: auto;
+.decouvrez {
+  font-size: 19px;
+  color: grey;
+  margin-top: -24px;
+  display: flex;
+  text-align: center;
+  margin-top: -8px;
 }
 
 .bouton_rechercher {
-  background-color: #e137cf;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   color: white;
   border-color: transparent;
-  font-size: 1.1rem;
+  font-size: 18px;
   height: 65px;
   font-weight: bold;
-  border-radius: 3rem;
-  margin-top: 1rem;
+  border-radius: 48px;
+  margin-top: 16px;
   width: 70%;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
+  border: none;
 }
 
 .bouton_rechercher:hover {
-  background-color: #fd59fbc2;
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
+
+/* <!-- Section 2 --> */
 
 h2 {
-  margin-left: 1.56rem;
-  margin-top: 2rem;
-  font-size: 2rem;
-}
-
-.config {
-  display: flex;
+  margin-left: 25px;
+  margin-top: 32px;
+  font-size: 25px;
 }
 
 .navigation {
@@ -111,23 +206,25 @@ h2 {
 
 .section_filtre {
   display: flex;
-  border-radius: 1rem;
-  margin-bottom: 1.37rem;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-bottom: 22px;
   cursor: pointer;
   font-weight: bold;
   background-color: rgb(248, 247, 247);
-  height: 65px;
-  box-shadow: 0 0 1rem #0000002e;
+  height: 70px;
+  box-shadow: 0 0 16px #0000002e;
   width: 80%;
   align-items: center;
 }
 
 .section_filtre:hover {
   background-color: #f8ecfb;
+  box-shadow: 0 0 30px #0000002e;
 }
 
 .numerotation {
-  background-color: #cb39d1;
+  background-color: #9356dc;
   color: white;
   border-radius: 100%;
   display: flex;
@@ -135,7 +232,7 @@ h2 {
   justify-content: center;
   min-height: 28px;
   min-width: 28px;
-  margin-left: -1rem;
+  margin-left: -16px;
 }
 
 .icone_choissisez {
@@ -150,9 +247,9 @@ h2 {
 .icone_choissisez,
 .icone_composez,
 .icone_degustez {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  font-size: 1.2rem;
+  margin-right: 24px;
+  margin-left: 24px;
+  font-size: 19px;
   color: rgb(129, 127, 127);
 }
 
@@ -165,13 +262,13 @@ h2 {
 .section_restaurants {
   background-color: rgb(248, 247, 247);
   height: auto;
-  padding-top: 1.5rem;
-  padding-bottom: 4rem;
+  padding-top: 24px;
+  padding-bottom: 64px;
 }
 
 h3 {
-  margin-left: 1.56rem;
-  font-size: 1.7rem;
+  margin-left: 25px;
+  font-size: 27px;
   background-color: rgb(248, 247, 247);
 }
 
@@ -188,11 +285,11 @@ a {
 
 .restaurant {
   display: flex;
-  box-shadow: 0 0 1rem #0000002e;
+  box-shadow: 0 0 16px #0000002e;
   border-color: white;
   background-color: white;
-  border-radius: 0.75rem;
-  margin: 0px 0px 1.5rem 0;
+  border-radius: 12px;
+  margin: 0px 0px 24px 0;
   width: auto;
   height: 250px;
   overflow: hidden;
@@ -211,22 +308,22 @@ a {
   background-color: #8aead2;
   color: #1fa68d;
   font-weight: bold;
-  margin-top: 0.7rem;
+  margin-top: 11px;
   height: 35px;
   display: flex;
   align-items: center;
   width: 100px;
-  font-size: 1.1rem;
+  font-size: 18px;
   justify-content: center;
-  border-radius: 0.2rem;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 .texte_restaurant {
-  font-size: 1rem;
+  font-size: 16px;
   color: black;
-  margin-top: -1rem;
-  margin-left: 1rem;
+  margin-top: -16px;
+  margin-left: 16px;
 }
 
 .coeur_1 {
@@ -236,7 +333,7 @@ a {
   height: 32px;
   display: flex;
   align-items: flex-end;
-  font-size: 1.6rem;
+  font-size: 26px;
   cursor: pointer;
 }
 
@@ -247,7 +344,7 @@ a {
   height: 32px;
   display: flex;
   align-items: flex-end;
-  font-size: 1.6rem;
+  font-size: 26px;
   cursor: pointer;
 }
 
@@ -256,37 +353,37 @@ a {
 }
 
 .lieu_restaurant {
-  font-size: 1.1rem;
-  margin-top: -0.7rem;
+  font-size: 18px;
+  margin-top: -11px;
 }
 
 .nom_restaurant {
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
+  font-size: 19px;
+  margin-top: 24px;
 }
 
 footer {
   background-color: #4e4b4b;
   color: white;
-  margin-top: -3rem;
+  margin-top: -48px;
 }
 
 h4 {
-  margin-left: 2rem;
-  padding-top: 1rem;
-  font-size: 22px;
+  margin-left: 32px;
+  padding-top: 16px;
+  font-size: 20px;
   font-family: "Shrikhand";
   letter-spacing: initial;
 }
 
 footer a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 19px;
 }
 
 .container {
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
 }
 
 .container ul li {
@@ -294,23 +391,39 @@ footer a {
 }
 
 .icone_restaurant {
-  margin-right: 1.4rem;
-  font-size: 1rem;
+  margin-right: 22px;
+  font-size: 16px;
   color: white;
 }
 
 .icone_partenaire {
-  margin-right: 1.2rem;
-  font-size: 0.8rem;
+  margin-right: 19px;
+  font-size: 13px;
   color: white;
 }
 
 @media screen and (min-width: 1000px) {
   /*Ici, le CSS s'appliquera aux écrans de 1000 px minimum*/
 
+  /* <!-- Loader spinner --> */
+  .loader {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* <!-- Header --> */
+
+  header img {
+    width: 25%;
+  }
+
+  /* <!-- Section 1 --> */
+
   .bouton_rechercher {
     width: 20%;
   }
+
+  /* <!-- Section 2 --> */
 
   .section_fonctionnement {
     display: flex;
@@ -320,8 +433,12 @@ footer a {
   }
 
   .navigation {
-    width: 25%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
   }
+
+  /* <!-- Section 3 --> */
 
   .section_restaurants {
     flex-direction: column;
@@ -330,6 +447,27 @@ footer a {
 
   .les_restaurants {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .restaurant {
+    width: auto;
+    height: auto;
+  }
+
+  .image_restaurant img {
+    height: 250px;
+    width: 550px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  /* <!-- Footer --> */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

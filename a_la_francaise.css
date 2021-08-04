@@ -136,9 +136,22 @@ a {
   font-family: "Roboto";
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 0.9rem;
   margin-top: -0.5rem;
+}
+
+.entree:hover .description_produit {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 85%;
+  background-color: #e137cf; /* test */
+}
+
+.entree:hover .prix {
+  background-color: chocolate; /* test */
+  position: absolute;
 }
 
 .prix {
@@ -179,7 +192,7 @@ a {
 }
 
 .bouton_commander {
-  background-color: #e137cf;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   color: white;
   border-color: transparent;
   font-size: 1.1rem;
@@ -193,10 +206,11 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 .bouton :hover {
-  background-color: #fd59fbc2;
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
 /* <!-- Footer --> */
