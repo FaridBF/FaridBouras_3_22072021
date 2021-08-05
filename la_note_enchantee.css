@@ -9,13 +9,12 @@ body {
 }
 
 /* <!-- Header --> */
-
 .fleche {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 24px;
   align-self: center;
   position: absolute;
-  left: 1.5rem;
+  left: 24px;
 }
 
 header img {
@@ -30,14 +29,13 @@ header img {
 }
 
 /* <!-- Section 1 --> */
-
 main {
   padding: auto;
 }
 
 .image_restaurant {
   width: 100%;
-  height: 190px;
+  height: 200px;
 }
 
 img {
@@ -45,45 +43,62 @@ img {
 }
 
 /* <!-- Section 2 --> */
-
 .section_restaurants {
   background-color: rgb(248, 247, 247);
   width: 100%;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  height: 1450px;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  height: auto;
   position: relative;
-  padding-top: 0.5rem;
+  padding-top: 8px;
 }
 
 h1 {
-  width: 81%;
-  font-size: 1.7rem;
+  width: 92%;
+  font-size: 27px;
   display: flex;
   justify-content: space-between;
-  margin-left: 1.5rem;
+  margin-left: 24px;
   font-style: italic;
   font-family: "Shrikhand";
 }
 
+.coeur_1 {
+  float: right;
+  color: #6b6868;
+  margin-right: 26px;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.coeur_2 {
+  float: right;
+  color: transparent;
+  margin-right: -26px;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.coeur_2 :hover {
+  color: #9356dc;
+  transform: scale(1);
+  transition: all 0.7s ease-in-out;
+}
+
 h2 {
   color: #686767;
-  font-size: 1.1rem;
-  margin-left: 1.5rem;
+  font-size: 18px;
+  margin-left: 24px;
   border-bottom: solid 3px #8af1ce;
-  padding-bottom: 0.4rem;
+  padding-bottom: 6px;
   width: 12%;
   font-family: "Roboto";
-}
-
-.nom_produit {
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: "Roboto";
-}
-
-a {
-  text-decoration: none;
 }
 
 .section_2 {
@@ -93,38 +108,19 @@ a {
 }
 
 .entree {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-top: -20%;
-    width: 90%;
-    animation-timing-function: ease-in;
-  }
-  50% {
-    margin-top: 0%;
-  }
-
-  to {
-    margin-bottom: 5.8%;
-    width: 90%;
-  }
-}
-
-.entree {
   display: flex;
-  box-shadow: 0 0 1rem #0000002e;
+  box-shadow: 0 0 16px #0000002e;
   border-color: white;
-  border-radius: 1.5rem;
-  margin: 0px 0px 1.5rem 0rem;
-  padding-left: 0.8rem;
+  border-radius: 24px;
+  margin: 0px 0px 24px 0;
+  padding-left: 13px;
   width: 90%;
   height: 80px;
   overflow: hidden;
   background: white;
   cursor: pointer;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 .texte {
@@ -132,19 +128,62 @@ a {
   width: 95%;
 }
 
+@keyframes slidein {
+  from {
+    margin-top: -20%;
+    width: 90%;
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nom_produit {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
 .description_produit {
   font-family: "Roboto";
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  margin-top: -0.5rem;
+  font-size: 14px;
+  margin-top: -8px;
 }
 
 .prix {
   color: #0f0f0f;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
+}
+
+.icone_check {
+  transition: transform 600ms ease-in-out;
+  transform: rotate(-1turn);
+}
+
+.entree:hover .description_produit {
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 85%;
+  background-color: #e137cf; /* test */
+}
+
+.entree:hover .prix {
+  background-color: chocolate; /* test */
+  position: absolute;
 }
 
 .entree:hover .pour_validation {
@@ -168,51 +207,47 @@ a {
   margin-left: 20px;
 }
 
-.icone_check {
-  transition: transform 600ms ease-in-out;
-  transform: rotate(-1turn);
-}
-
+/* <!-- Section 2 Bouton --> */
 .bouton {
   display: flex;
   justify-content: center;
 }
 
 .bouton_commander {
-  background-color: #e137cf;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   color: white;
   border-color: transparent;
-  font-size: 1.1rem;
+  font-size: 18px;
   height: 60px;
   font-weight: bold;
-  border-radius: 3rem;
-  margin-top: 2rem;
+  border-radius: 48px;
+  margin-top: 32px;
+  margin-bottom: 30px;
   width: 60%;
   box-shadow: 0 0 16px #00000061;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 .bouton :hover {
-  background-color: #fd59fbc2;
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
 /* <!-- Footer --> */
-
 footer {
-  background-color: #4e4b4b;
+  background-color: #353535;
   color: white;
-  margin-top: -3rem;
+  margin-top: -48px;
   height: auto;
-  overflow-x: hidden;
 }
 
 h3 {
-  margin-left: 2rem;
-  padding-top: 3rem;
-  font-size: 1.6rem;
+  margin-left: 32px;
+  padding-top: 48px;
+  font-size: 26px;
   font-family: "Shrikhand";
   letter-spacing: initial;
 }
@@ -220,12 +255,12 @@ h3 {
 footer a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 17px;
   font-family: "Roboto";
 }
 
 .container {
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
 }
 
 .container ul li {
@@ -234,24 +269,44 @@ footer a {
 }
 
 .icone_restaurant {
-  margin-right: 1.4rem;
-  font-size: 1rem;
+  margin-right: 22px;
+  font-size: 16px;
   color: white;
 }
 
 .icone_partenaire {
-  margin-right: 1.2rem;
-  font-size: 0.8rem;
+  margin-right: 19px;
+  font-size: 13px;
   color: white;
 }
 
 @media screen and (min-width: 600px) {
   /*Ici, le CSS s'appliquera aux écrans de 600 px minimum*/
 
+  /* <!-- Section 1 --> */
+  .fleche {
+    font-size: 30px;
+  }
+
+  header img {
+    width: 30%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+
   .image_restaurant {
     width: 100%;
-    height: 670px;
+    height: 285px;
   }
+
+  .image_restaurant img {
+    width: 100%;
+    object-fit: cover;
+    height: 330px;
+  }
+
+  /* <!-- Section 2 --> */
 
   h1 {
     display: flex;
@@ -271,6 +326,12 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    position: relative;
+  }
+
+  .dispo_coeur {
+    margin-left: 25px;
   }
 
   .section_2 {
@@ -278,25 +339,25 @@ footer a {
   }
 
   .entree {
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-name: slidein;
   }
 
   @keyframes slidein {
     from {
-      margin-top: -5%;
-      width: 85%;
-      animation-timing-function: ease-in;
+      margin-top: -20%;
+      width: 90%;
     }
-    50% {
-      margin-top: 0%;
+    40% {
+      opacity: 1;
+      transform: translateY(50px);
     }
 
-    to {
-      margin-bottom: 1.6%;
-      width: 85%;
+    100% {
+      opacity: 1;
     }
   }
+
   .entree:hover .pour_validation {
     background-color: rgb(86, 255, 199);
     width: 20%;
@@ -323,10 +384,12 @@ footer a {
     transform: rotate(-1turn);
   }
 
+  /* <!-- Section 2 Bouton --> */
   .bouton {
-    width: 35%;
+    width: 25%;
   }
 
+  /* <!-- Footer --> */
   footer {
     display: flex;
     justify-content: center;
