@@ -177,7 +177,7 @@ a {
   display: block;
   overflow: hidden;
   white-space: nowrap;
-  width: 85%;
+  /* width: 85%; */
   background-color: #e137cf; /* test */
 }
 
@@ -399,5 +399,6 @@ footer a {
   footer {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 }
