@@ -63,7 +63,7 @@ h1 {
   font-family: "Shrikhand";
 }
 
-.coeur_1 {
+.fa-heart {
   float: right;
   color: #6b6868;
   margin-right: 26px;
@@ -74,20 +74,11 @@ h1 {
   cursor: pointer;
 }
 
-.coeur_2 {
-  float: right;
-  color: transparent;
-  margin-right: -26px;
-  height: 32px;
-  display: flex;
-  align-items: flex-end;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.coeur_2 :hover {
-  color: #9356dc;
-  transform: scale(1);
+.fa-heart:hover {
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.7s ease-in-out;
 }
 
