@@ -54,7 +54,7 @@ img {
 }
 
 h1 {
-  width: 92%;
+  width: 85%;
   font-size: 27px;
   display: flex;
   justify-content: space-between;
@@ -79,8 +79,7 @@ h1 {
   font-weight: bolder;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.1);
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 h2 {
@@ -118,6 +117,44 @@ h2 {
 .texte {
   background-color: white;
   width: 95%;
+  overflow: hidden;
+}
+
+.texte_1 {
+  padding: 0;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-top: 15px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 17px;
+  font-family: "Roboto";
+  margin-top: 5px;
+}
+
+.prix {
+  color: #0f0f0f;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 @keyframes slidein {
@@ -135,28 +172,8 @@ h2 {
   }
 }
 
-.nom_produit {
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Roboto";
-}
-
 a {
   text-decoration: none;
-}
-
-.description_produit {
-  font-family: "Roboto";
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-top: -8px;
-}
-
-.prix {
-  color: #0f0f0f;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .icone_check {
@@ -164,19 +181,12 @@ a {
   transform: rotate(-1turn);
 }
 
-.entree:hover .description_produit {
-  text-overflow: ellipsis;
-  display: block;
-  overflow: hidden;
+.entree:hover .prix {
   white-space: nowrap;
-  width: 85%;
-  background-color: #e137cf; /* test */
+  width: 12%;
 }
 
-.entree:hover .prix {
-  background-color: chocolate; /* test */
-  position: absolute;
-}
+/* <!-- Section 2 Animation validation --> */
 
 .entree:hover .pour_validation {
   background-color: rgb(86, 255, 199);
@@ -355,6 +365,7 @@ footer a {
     width: 20%;
     font-size: 30px;
     transform: rotate(0deg);
+    margin-left: -20px;
   }
 
   .entree:hover .icone_check {
