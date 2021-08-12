@@ -348,6 +348,10 @@ a {
   transition: all 1s ease-in-out;
 }
 
+i.far.fa-heart {
+  margin-top: 6px;
+}
+
 .nom_restaurant {
   font-weight: bold;
   font-size: 19px;

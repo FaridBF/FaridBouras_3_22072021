@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 350px;
+  overflow-y: hidden;
 }
 
 /* <!-- Header --> */
@@ -55,7 +56,7 @@ img {
 
 h1 {
   width: 85%;
-  font-size: 27px;
+  font-size: 26px;
   display: flex;
   justify-content: space-between;
   margin-left: 24px;
@@ -80,6 +81,13 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.7s ease-in-out;
+}
+
+i.far.fa-heart {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  flex-direction: row;
 }
 
 h2 {
