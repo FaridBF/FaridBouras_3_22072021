@@ -372,7 +372,6 @@ footer a {
     width: 20%;
     font-size: 30px;
     transform: rotate(0deg);
-    margin-left: -20px;
   }
 
   .entree:hover .icone_check {
@@ -404,5 +403,11 @@ footer a {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .entree:hover .pour_validation {
+    margin-left: 0px;
   }
 }
