@@ -398,6 +398,10 @@ footer a {
     width: 25%;
   }
 
+  .bouton_commander {
+    width: 100%;
+  }
+
   /* <!-- Footer --> */
   footer {
     display: flex;
@@ -407,7 +411,12 @@ footer a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*Ici, le CSS s'appliquera aux écrans de 768 px minimum à 1024px maximum */
   .entree:hover .pour_validation {
     margin-left: 0px;
+  }
+
+  .bouton {
+    width: 35%;
   }
 }

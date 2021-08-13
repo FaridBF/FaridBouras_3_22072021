@@ -484,3 +484,20 @@ footer a {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*Ici, le CSS s'appliquera aux écrans de 768 px minimum à 1024px maximum */
+
+  .restaurant {
+    height: 325px;
+  }
+
+  .image_restaurant img {
+    height: 250px;
+    width: 450px;
+  }
+
+  .nouveau {
+    margin-left: 330px;
+  }
+}
