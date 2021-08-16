@@ -14,7 +14,7 @@ body {
   min-width: 350px;
 }
 
-/* <!-- Loader spinner --> */
+/* Loader spinner */
 
 .animation {
   width: 100%;
@@ -115,7 +115,7 @@ body {
   }
 }
 
-/* <!-- Header --> */
+/* Header */
 
 .logo {
   display: flex;
@@ -128,7 +128,7 @@ header img {
   padding-bottom: 3%;
 }
 
-/* <!-- Section 1 --> */
+/* Section 1 */
 
 .localisation {
   display: flex;
@@ -189,7 +189,7 @@ header img {
   background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
-/* <!-- Section 2 --> */
+/* Section 2 */
 
 h2 {
   margin-left: 25px;
@@ -259,7 +259,7 @@ h2 {
   color: #9356dc;
 }
 
-/* <!-- Section 3 --> */
+/* Section 3 */
 
 .section_restaurants {
   background-color: rgb(248, 247, 247);
@@ -363,7 +363,7 @@ i.far.fa-heart {
   margin-top: -11px;
 }
 
-/* <!-- Footer --> */
+/* Footer */
 
 footer {
   background-color: #353535;
@@ -407,25 +407,25 @@ footer a {
 @media screen and (min-width: 1000px) {
   /*Ici, le CSS s'appliquera aux écrans de 1000 px minimum*/
 
-  /* <!-- Loader spinner --> */
+  /* Loader spinner */
   .loader {
     width: 90px;
     height: 90px;
   }
 
-  /* <!-- Header --> */
+  /* Header */
 
   header img {
     width: 25%;
   }
 
-  /* <!-- Section 1 --> */
+  /* Section 1 */
 
   .bouton_rechercher {
     width: 265px;
   }
 
-  /* <!-- Section 2 --> */
+  /* Section 2 */
 
   .section_fonctionnement {
     display: flex;
@@ -446,7 +446,7 @@ footer a {
     width: 25%;
   }
 
-  /* <!-- Section 3 --> */
+  /* Section 3 */
 
   .section_restaurants {
     flex-direction: column;
@@ -475,7 +475,7 @@ footer a {
     margin-left: 584px;
   }
 
-  /* <!-- Footer --> */
+  /* Footer */
 
   footer {
     display: flex;

@@ -13,7 +13,7 @@ body {
   overflow-y: hidden;
 }
 
-/* <!-- Header --> */
+/* Header */
 .fleche {
   display: flex;
   font-size: 24px;
@@ -33,7 +33,7 @@ header img {
   justify-content: center;
 }
 
-/* <!-- Section 1 --> */
+/* Section 1 */
 main {
   padding: auto;
 }
@@ -47,7 +47,7 @@ img {
   width: 100%;
 }
 
-/* <!-- Section 2 --> */
+/* Section 2 */
 .section_restaurants {
   background-color: rgb(248, 247, 247);
   width: 100%;
@@ -198,7 +198,7 @@ a {
   width: 12%;
 }
 
-/* <!-- Section 2 Animation validation --> */
+/* Section 2 Animation validation */
 
 .entree:hover .pour_validation {
   background-color: rgb(86, 255, 199);
@@ -221,7 +221,7 @@ a {
   margin-left: 20px;
 }
 
-/* <!-- Section 2 Bouton --> */
+/* Section 2 Bouton */
 .bouton {
   display: flex;
   justify-content: center;
@@ -250,7 +250,7 @@ a {
   background: linear-gradient(175deg, #ff93e1, #a16be0);
 }
 
-/* <!-- Footer --> */
+/* Footer */
 footer {
   background-color: #353535;
   color: white;
@@ -297,7 +297,7 @@ footer a {
 @media screen and (min-width: 600px) {
   /*Ici, le CSS s'appliquera aux écrans de 600 px minimum*/
 
-  /* <!-- Section 1 --> */
+  /* Section 1 */
   .fleche {
     font-size: 30px;
   }
@@ -320,7 +320,7 @@ footer a {
     height: 330px;
   }
 
-  /* <!-- Section 2 --> */
+  /* Section 2 */
 
   h1 {
     display: flex;
@@ -398,7 +398,7 @@ footer a {
     transform: rotate(-1turn);
   }
 
-  /* <!-- Section 2 Bouton --> */
+  /* Section 2 Bouton */
   .bouton {
     width: 25%;
   }
@@ -407,7 +407,7 @@ footer a {
     width: 100%;
   }
 
-  /* <!-- Footer --> */
+  /* Footer */
   footer {
     display: flex;
     justify-content: center;
@@ -425,5 +425,3 @@ footer a {
     width: 35%;
   }
 }
-
-/* ------------------- LA PALETTE DU GOUT -------------------  */
