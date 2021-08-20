@@ -72,6 +72,7 @@ h1 {
   float: right;
   color: #6b6868;
   margin-right: 26px;
+  height: 32px;
   height: 24px;
   display: flex;
   align-items: flex-end;
@@ -87,6 +88,7 @@ h1 {
   font-weight: bolder;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.7s ease-in-out;
   background-size: 24px 24px;
   transition: background-size 1s ease-in-out;
 }
@@ -200,6 +202,8 @@ a {
 .entree:hover .prix {
   white-space: nowrap;
   width: 12%;
+  transform: translateX(-20px);
+  transition: transform 600ms, 800ms;
 }
 
 /* Section 2 Animation validation */
@@ -219,8 +223,6 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
-  transform: translate(100px, 0px);
-  transition: transform 600ms, 800ms cubic-bezier(0.39, 0.58, 0.57, 1);
   margin-left: 20px;
 }
 
@@ -320,7 +322,7 @@ footer a {
   }
 
   .image_restaurant {
-    width: 2980px;
+    width: 1515px;
     height: 350px;
   }
 
@@ -383,7 +385,7 @@ footer a {
       transform: translateY(50px);
     }
 
-    100% {
+    40% {
       opacity: 1;
     }
   }
