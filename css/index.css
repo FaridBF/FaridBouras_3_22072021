@@ -328,15 +328,22 @@ a {
   margin-left: 16px;
 }
 
+.dispo_coeur {
+  margin-right: 20px;
+}
+
 .fa-heart {
   float: right;
   color: #6b6868;
   margin-right: 26px;
-  height: 32px;
+  height: 30px;
   display: flex;
   align-items: flex-end;
-  font-size: 26px;
+  font-size: 30px;
   cursor: pointer;
+  background-size: 30px 0px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .fa-heart:hover {
@@ -344,11 +351,27 @@ a {
   font-weight: bolder;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.1);
-  transition: all 1s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-size: 30px 30px;
+  transition: background-size 1s ease-in-out;
 }
 
 i.far.fa-heart {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  flex-direction: row;
+  margin-top: 6px;
+}
+
+i.fas.fa-heart {
+  display: flex;
+  align-items: center;
+  margin-right: -29px;
+  height: 28px;
+  flex-direction: row;
+  color: transparent;
+  font-size: 28px;
   margin-top: 6px;
 }
 
