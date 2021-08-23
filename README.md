@@ -2,7 +2,7 @@
 
 ## **Projet 3- OC : Dynamisez une page web avec des animations CSS**
 
-<br>_Troisième projet du parcours "Développeur web" chez OpenClassroom._</br>
+<br>_Troisième projet du parcours "Développeur web" chez [OpenClassrooms](https://openclassrooms.com/fr/paths/185-developpeur-web)._</br>
 
 **Objectifs** : Développer la maquette d'un site avec des animations proposant le menu de 4 grands restaurants parisiens permettant la réservation en ligne et la consultation des menus.
 
