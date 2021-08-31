@@ -222,6 +222,7 @@ a {
   width: 25%;
   font-size: 30px;
   transform: rotate(0deg);
+  transition: 900ms ease-in-out;
 }
 
 .entree:hover .icone_check {
@@ -233,6 +234,7 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
+  transition: 900ms ease-in-out;
 }
 
 /* Section 2 Bouton */
