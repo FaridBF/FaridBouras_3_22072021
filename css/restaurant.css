@@ -235,6 +235,7 @@ a {
   align-items: center;
   color: white;
   transition: 900ms ease-in-out;
+  width: 10%;
 }
 
 /* Section 2 Bouton */
